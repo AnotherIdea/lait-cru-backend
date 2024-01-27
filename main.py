@@ -16,11 +16,15 @@ app.add_middleware(
 class Marker(BaseModel):
     lat: float
     lng: float
-    popup: str
+    name: str
+    logo: str
+    website: str
+    address: str
+    phone_number: str
 
 markers = [
-    Marker(lat=48.8566, lng=2.3522, popup="Marqueur à Paris"),
-    Marker(lat=45.7640, lng=4.8357, popup="Marqueur à Lyon"),
+    Marker(lat=47.0243098215608, lng=-0.7580285865069062, name="Bernard Gaborit", logo="", website="https://www.bernardgaborit.fr/vente-a-la-ferme", address="La Grande Nillière Maulevrier 49360 France", phone_number="02 41 55 56 54"),
+    Marker(lat=45.7640, lng=4.8357, name="Ferme de Kerheu", logo="", website="https://www.fermedekerheu.com/", address="Rte de Kerheu, 29510 Briec", phone_number="0188336185"),
     # Autres marqueurs
 ]
 
